@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ProjectModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Book">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="author" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="description" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="picture" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="category" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="rating" Type="Int32" />
+    <Property Name="link" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="User_Book" Relationship="Self.FK_User_Book_Book" FromRole="Book" ToRole="User_Book" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="picture" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="User_Book" Relationship="Self.FK_User_Book_User" FromRole="User" ToRole="User_Book" />
+  </EntityType>
+  <EntityType Name="User_Book">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="user_id" Type="Int32" />
+    <Property Name="book_id" Type="Int32" />
+    <NavigationProperty Name="Book" Relationship="Self.FK_User_Book_Book" FromRole="User_Book" ToRole="Book" />
+    <NavigationProperty Name="User" Relationship="Self.FK_User_Book_User" FromRole="User_Book" ToRole="User" />
+    <Property Name="rating" Type="Int32" />
+    <Property Name="subscribe" Type="Int32" />
+  </EntityType>
+  <Association Name="FK_User_Book_Book">
+    <End Role="Book" Type="Self.Book" Multiplicity="0..1" />
+    <End Role="User_Book" Type="Self.User_Book" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Book">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="User_Book">
+        <PropertyRef Name="book_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_Book_User">
+    <End Role="User" Type="Self.User" Multiplicity="0..1" />
+    <End Role="User_Book" Type="Self.User_Book" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="User_Book">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ProjectEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Books" EntityType="Self.Book" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <EntitySet Name="User_Book" EntityType="Self.User_Book" />
+    <AssociationSet Name="FK_User_Book_Book" Association="Self.FK_User_Book_Book">
+      <End Role="Book" EntitySet="Books" />
+      <End Role="User_Book" EntitySet="User_Book" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Book_User" Association="Self.FK_User_Book_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="User_Book" EntitySet="User_Book" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

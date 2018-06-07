@@ -1,0 +1,32 @@
+D:\CSharp\Trial\DataLayer\bin\Debug\DataLayer.dll
+D:\CSharp\Trial\DataLayer\bin\Debug\DataLayer.pdb
+D:\CSharp\Trial\DataLayer\bin\Debug\EntityFramework.dll
+D:\CSharp\Trial\DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\CSharp\Trial\DataLayer\bin\Debug\ModelLayer.dll
+D:\CSharp\Trial\DataLayer\bin\Debug\ModelLayer.pdb
+D:\CSharp\Trial\DataLayer\bin\Debug\EntityFramework.xml
+D:\CSharp\Trial\DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\CSharp\Trial\DataLayer\obj\Debug\DataLayer.csprojResolveAssemblyReference.cache
+D:\CSharp\Trial\DataLayer\obj\Debug\DataLayer.dll
+D:\CSharp\Trial\DataLayer\obj\Debug\DataLayer.pdb
+D:\CSharp\Trial\DataLayer\bin\Debug\ModelLayer.dll.config
+E:\7th semester\C#\Final Term\Project BookBinder\trial (1)\DataLayer\bin\Debug\DataLayer.dll
+E:\7th semester\C#\Final Term\Project BookBinder\trial (1)\DataLayer\bin\Debug\DataLayer.pdb
+E:\7th semester\C#\Final Term\Project BookBinder\trial (1)\DataLayer\bin\Debug\ModelLayer.dll
+E:\7th semester\C#\Final Term\Project BookBinder\trial (1)\DataLayer\bin\Debug\ModelLayer.pdb
+E:\7th semester\C#\Final Term\Project BookBinder\trial (1)\DataLayer\bin\Debug\EntityFramework.xml
+E:\7th semester\C#\Final Term\Project BookBinder\trial (1)\DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+E:\7th semester\C#\Final Term\Project BookBinder\trial (1)\DataLayer\obj\Debug\DataLayer.csprojResolveAssemblyReference.cache
+E:\7th semester\C#\Final Term\Project BookBinder\trial (1)\DataLayer\obj\Debug\DataLayer.dll
+E:\7th semester\C#\Final Term\Project BookBinder\trial (1)\DataLayer\obj\Debug\DataLayer.pdb
+E:\AIUB\7th semester\C#\Final Term\Project BookBinder\trial (1)\DataLayer\bin\Debug\DataLayer.dll
+E:\AIUB\7th semester\C#\Final Term\Project BookBinder\trial (1)\DataLayer\bin\Debug\DataLayer.pdb
+E:\AIUB\7th semester\C#\Final Term\Project BookBinder\trial (1)\DataLayer\bin\Debug\ModelLayer.dll
+E:\AIUB\7th semester\C#\Final Term\Project BookBinder\trial (1)\DataLayer\bin\Debug\ModelLayer.pdb
+E:\AIUB\7th semester\C#\Final Term\Project BookBinder\trial (1)\DataLayer\bin\Debug\ModelLayer.dll.config
+E:\AIUB\7th semester\C#\Final Term\Project BookBinder\trial (1)\DataLayer\bin\Debug\EntityFramework.xml
+E:\AIUB\7th semester\C#\Final Term\Project BookBinder\trial (1)\DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+E:\AIUB\7th semester\C#\Final Term\Project BookBinder\trial (1)\DataLayer\obj\Debug\DataLayer.csprojResolveAssemblyReference.cache
+E:\AIUB\7th semester\C#\Final Term\Project BookBinder\trial (1)\DataLayer\obj\Debug\DataLayer.csproj.CoreCompileInputs.cache
+E:\AIUB\7th semester\C#\Final Term\Project BookBinder\trial (1)\DataLayer\obj\Debug\DataLayer.dll
+E:\AIUB\7th semester\C#\Final Term\Project BookBinder\trial (1)\DataLayer\obj\Debug\DataLayer.pdb
